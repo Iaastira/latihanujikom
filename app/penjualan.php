@@ -10,6 +10,9 @@ class penjualan extends Model
 public $timestamps = 'true';
 
 public function kasir() {
-return $this->belongsTo ('App\kasir','id_pasok');
+return $this->belongsTo ('App\kasir','id_kasir');
 }
+public function buku() {
+    return $this->belongsTo ('App\buku','id_buku');
+    }
 }
