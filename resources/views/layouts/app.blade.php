@@ -36,10 +36,16 @@
                     @else
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('menu1') }}</a>
+                            <a class="nav-link" href="{{ route('login') }}">Menu Role Super Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('menu2') }}</a>
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Menu Role Admin') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Menu Role User') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Menu Global Role') }}</a>
                         </li>
                     </ul>
                     @endguest
