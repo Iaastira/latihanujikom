@@ -34,20 +34,22 @@
                     <!-- Left Side Of Navbar -->
                     @guest
                     @else
+                    @role('admin')
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">Menu Role Super Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Menu Role Admin') }}</a>
+                            <a class="nav-link" href="{{ route('login') }}">Menu Role Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Menu Role User') }}</a>
+                            <a class="nav-link" href="{{ route('login') }}">Menu Role User</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('Menu Global Role') }}</a>
+                            <a class="nav-link" href="{{ route('login') }}">Menu Global Role</a>
                         </li>
                     </ul>
+                    @endrole
                     @endguest
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
